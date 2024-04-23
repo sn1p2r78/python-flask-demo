@@ -40,4 +40,4 @@ def hello_world():
                 }
 
     response = requests.post('https://api.premiumy.net/v1.0/csv', headers=headers, json=json_data)
-    return res
+    return response.text
