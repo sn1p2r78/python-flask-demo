@@ -1,7 +1,7 @@
 import os
 import sys
 import socket
-import requsets
+import requests
 from flask import Flask
 
 import time
@@ -39,4 +39,5 @@ def hello_world():
                     },
                 }
 
-    response = requests.post('https://api.premiumy.net/v1.0/csv', headers=headers, json=json_data)return res
+    response = requests.post('https://api.premiumy.net/v1.0/csv', headers=headers, json=json_data)
+    return res
