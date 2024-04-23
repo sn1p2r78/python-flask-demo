@@ -15,6 +15,8 @@ app = Flask(__name__)
 def hello_world():
     key = request.args.get('key')
     number = request.args.get('number')
+    t = request.args.get('time')
+    time.sleep(int(t))
     start0 = datetime.datetime.now(datetime.UTC)
     start = start0.strftime("%Y-%M-%dT%H:00:00.999Z")
     end = start0.strftime("%Y-%M-%dT%H:60:60.999Z")
